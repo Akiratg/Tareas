@@ -1,0 +1,61 @@
+//Objeto literal
+
+var aspiradora = {
+    color: 'roja', //propiedad 1
+    modelo: 'ultimo', //propiedad 2
+    tamano: 'compacta', //propiedad 3
+    
+    
+    limpiar: function () {
+        c('limpiando')
+    },
+    
+    ruido: function () {
+        c('haciendo ruido')
+    },
+    
+    succionar: function (basura = 'polvo'){
+        c(`${this.nombre} succiona ${polvo}`)
+    }
+}
+
+
+c(
+  aspiradora,
+    aspiradora.color,
+    aspiradora.modelo,
+    aspiradora.tamano,
+
+)
+
+
+aspiradora.limpiar()
+aspiradora.ruido()
+aspiradora.succionar()
+}) (console.log);
+
+
+
+
+
+
+//Class
+class Aspiradora {
+    constructor (color, modelo, tamano) {
+        this.color = rojo
+        this.modelo = ultimo
+        this.tamano = compacta
+    }
+    
+limpiar () {
+    c('limpiando')
+}
+    
+ruido () {
+    c('haciendo ruido')
+}
+
+succionar () {
+    c('succionando')
+}
+} (console.log);
